@@ -1,0 +1,15 @@
+.bg-homepage {
+  background-image: url("/images/bg-banner.svg");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: cover;
+  min-height: 750px;
+  z-index: -1;
+  width: 100%;
+  top: 0;
+  right: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}

@@ -1,0 +1,110 @@
+{
+  "headerOptions": [
+    {
+      "name": "Home",
+      "options": [
+        {
+          "id": 0,
+          "name": "Home 1"
+        },
+        {
+          "id": 1,
+          "name": "Home 2"
+        },
+        {
+          "id": 2,
+          "name": "Home 3"
+        },
+        {
+          "id": 3,
+          "name": "Home 4"
+        },
+        {
+          "id": 4,
+          "name": "Home 5"
+        }
+      ]
+    },
+    {
+      "name": "Find a job",
+      "options": [
+        {
+          "id": 0,
+          "name": "All jobs"
+        },
+        {
+          "id": 1,
+          "name": "Job Details"
+        },
+        {
+          "id": 2,
+          "name": "Job Dashboard"
+        }
+      ]
+    },
+    {
+      "name": "Recruiters",
+      "options": [
+        {
+          "id": 0,
+          "name": "Recruiters"
+        },
+        {
+          "id": 1,
+          "name": "Recruiter Details"
+        }
+      ]
+    },
+    {
+      "name": "Candidates",
+      "options": [
+        {
+          "id": 0,
+          "name": "Candidates"
+        },
+        {
+          "id": 1,
+          "name": "Candidate Details"
+        },
+        {
+          "id": 2,
+          "name": "Candidate With Video"
+        }
+      ]
+    },
+    {
+      "name": "Blog",
+      "options": [
+        {
+          "id": 0,
+          "name": "Blog Grid"
+        },
+        {
+          "id": 1,
+          "name": "Blog Single"
+        }
+      ]
+    },
+    {
+      "name": "Pages",
+      "options": [
+        {
+          "id": 0,
+          "name": "About Us"
+        },
+        {
+          "id": 1,
+          "name": "Contact"
+        },
+        {
+          "id": 2,
+          "name": "Pricing Plan"
+        },
+        {
+          "id": 3,
+          "name": "Shop Page "
+        }
+      ]
+    }
+  ]
+}
