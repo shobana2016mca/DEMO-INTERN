@@ -6,6 +6,7 @@ import allJobsData from "./all-jobs.json";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBriefcase, faClock } from "@fortawesome/free-solid-svg-icons";
+import SectionDetails from "../common/SectionDetails";
 
 interface Options {
   id: number;
@@ -80,10 +81,10 @@ export default function AllJobs() {
   };
   return (
     <div className="flex flex-col ">
-      <div className="text-center text-3xl">Jobs of the day</div>
-      <p className="text-center text-xl">
-        Search and connect with the right candidates faster
-      </p>
+      <SectionDetails
+        title="Jobs of the day"
+        description="Search and connect with the right candidates faster"
+      />
       <div>
         <div className="flex flex-wrap justify-center">
           {categories?.categories?.map(({ list }: CategoriesList) => {
