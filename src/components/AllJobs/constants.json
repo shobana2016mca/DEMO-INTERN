@@ -1,0 +1,64 @@
+{
+  "categories": [
+    {
+      "list": [
+        {
+          "id": 1,
+          "name": "Content Writer",
+          "availability": "4 Jobs Available",
+          "imageUrl": "/images/category/content-writer.svg",
+          "alt": "content writer"
+        },
+        {
+          "id": 2,
+          "name": "Finance",
+          "availability": "2 Jobs Available",
+          "imageUrl": "/images/category/finance.svg",
+          "alt": "Finance"
+        },
+        {
+          "id": 3,
+          "name": "Human Resource",
+          "availability": "No Job Available",
+          "imageUrl": "/images/category/customer-service.svg",
+          "alt": "Human Resource"
+        },
+        {
+          "id": 4,
+          "name": "Management",
+          "availability": "No Job Available",
+          "imageUrl": "/images/category/management.svg",
+          "alt": "Management"
+        },
+        {
+          "id": 5,
+          "name": "Market Research",
+          "availability": "1 Job Available",
+          "imageUrl": "/images/category/research.svg",
+          "alt": "Market Research"
+        },
+        {
+          "id": 6,
+          "name": "Marketing & Sale",
+          "availability": "No Job Available",
+          "imageUrl": "/images/category/sale.svg",
+          "alt": "Marketing & Sale"
+        },
+        {
+          "id": 7,
+          "name": "Retail & Product",
+          "availability": "No Job Available",
+          "imageUrl": "/images/category/retail.svg",
+          "alt": "content writer"
+        },
+        {
+          "id": 8,
+          "name": "Software",
+          "availability": "No Job Available",
+          "imageUrl": "/images/category/marketing.svg",
+          "alt": "Software"
+        }
+      ]
+    }
+  ]
+}
