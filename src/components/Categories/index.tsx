@@ -3,6 +3,7 @@ import "./styles.css";
 import Image from "next/image";
 import Slider from "react-slick";
 import categories from "./constants.json";
+import SectionDetails from "../common/SectionDetails";
 
 interface Options {
   id: number;
@@ -18,12 +19,10 @@ interface CategoriesList {
 
 export default function Categories() {
   const settings = {
-    className: "center",
-    dots: true,
+    className: "",
+    // dots: true,
     centerMode: true,
     infinite: true,
-    centerPadding: "60px",
-    slidesToShow: 4,
     speed: 500,
     rows: 2,
     slidesPerRow: 1,
@@ -43,32 +42,72 @@ export default function Categories() {
         height={43}
       />
     ),
+    responsive: [
+      {
+        breakpoint: 2000,
+        settings: {
+          slidesToShow: 5,
+          dots: true,
+
+        },
+      },
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
     <div className="flex flex-col ">
-      <div className="text-center text-3xl">Browse by category</div>
-      <p className="text-center text-xl">
-        Find the job that’s perfect for you. about 800+ new jobs everyday
-      </p>
+      <SectionDetails
+        title="Browse by category"
+        description="Find the job that’s perfect for you. about 800+ new jobs everyday"
+      />
       <div>
         <div className="slider-container">
           <Slider {...settings}>
             {categories?.categories?.map(({ list }: CategoriesList) => {
               return list?.map((item) => {
                 return (
-                  <div>
-                    <div>
-                      <Image
-                        src={item.imageUrl}
-                        alt={item.alt}
-                        width={42}
-                        height={42}
-                      />
-                    </div>
-                    <div className="">
-                      <h4>{item.name}</h4>
-                      <p className="font-xs mb-0">{item.availability} </p>
+                  <div className="mr-2 md:mr-6 mb-6 card-details ">
+                    <div className="w-52 flex flx-col category-image py-6 px-4 border rounded-lg border-slate-300 ">
+                      <>
+                        <Image
+                          src={item.imageUrl}
+                          alt={item.alt}
+                          width={42}
+                          height={42}
+                          className="category-icon"
+                        />
+                      </>
+                      <div className="ml-2">
+                        <h4 className="text-sm">{item.name}</h4>
+                        <p className="text-xs">{item.availability} </p>
+                      </div>
                     </div>
                   </div>
                 );
@@ -77,8 +116,6 @@ export default function Categories() {
           </Slider>
         </div>
       </div>
-
-  
     </div>
   );
 }
