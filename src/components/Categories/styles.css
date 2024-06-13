@@ -1,0 +1,11 @@
+
+
+.slider-container .slick-dots li.slick-active button:before {
+  color: #3c65f5;
+  width: 12px;
+  height: 12px;
+}
+
+.slider-container .slick-dots li button:before {
+  font-size: 10px;
+}
