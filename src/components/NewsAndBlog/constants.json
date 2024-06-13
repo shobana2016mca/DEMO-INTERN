@@ -1,0 +1,151 @@
+{
+  "newsAndBlogs": [
+    {
+      "list": [
+        {
+          "id": 0,
+          "heading": "Recruiter and Land Your Dream Job Explore Nice Jobs",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare pellentesque sollicitudin. Suspendisse potenti. Fusce ex risus, iaculis sit amet...",
+          "imageUrl": "/images/blogs/image-1.webp",
+          "alt": "Land Your Dream Job",
+          "userDetails": {
+            "postedTime": "March 16, 2023",
+            "timeDuration": "1min to read"
+          },
+          "tags": [
+            {
+              "id": 0,
+              "name": "Job Tips"
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "heading": "21 Job Interview Tips: How To Make a Great Impression",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare pellentesque sollicitudin. Suspendisse potenti. Fusce ex risus, iaculis sit amet...",
+          "imageUrl": "/images/blogs/image-2.webp",
+          "alt": "Land Your Dream Job",
+          "userDetails": {
+            "postedTime": "September 4, 2023",
+            "timeDuration": "2 mins to read"
+          },
+          "tags": [
+            {
+              "id": 0,
+              "name": "Job Tips"
+            },
+            {
+              "id": 1,
+              "name": "Events"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "heading": "21 Job Interview Tips: How To Make a Great Impression",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare pellentesque sollicitudin. Suspendisse potenti. Fusce ex risus, iaculis sit amet...",
+          "imageUrl": "/images/blogs/image-3.webp",
+          "alt": "Land Your Dream Job",
+          "userDetails": {
+            "postedTime": "September 4, 2023",
+            "timeDuration": "2 mins to read"
+          },
+          "tags": [
+            {
+              "id": 0,
+              "name": "Job Tips"
+            },
+            {
+              "id": 1,
+              "name": "Events"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "heading": "21 Job Interview Tips: How To Make a Great Impression",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare pellentesque sollicitudin. Suspendisse potenti. Fusce ex risus, iaculis sit amet...",
+          "imageUrl": "/images/blogs/image-4.webp",
+          "alt": "Land Your Dream Job",
+          "userDetails": {
+            "postedTime": "September 4, 2023",
+            "timeDuration": "2 mins to read"
+          },
+          "tags": [
+            {
+              "id": 0,
+              "name": "Job Tips"
+            },
+            {
+              "id": 1,
+              "name": "Events"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "heading": "21 Job Interview Tips: How To Make a Great Impression",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare pellentesque sollicitudin. Suspendisse potenti. Fusce ex risus, iaculis sit amet...",
+          "imageUrl": "/images/blogs/image-5.webp",
+          "alt": "Land Your Dream Job",
+          "userDetails": {
+            "postedTime": "September 4, 2023",
+            "timeDuration": "2 mins to read"
+          },
+          "tags": [
+            {
+              "id": 0,
+              "name": "Job Tips"
+            },
+            {
+              "id": 1,
+              "name": "Events"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "heading": "21 Job Interview Tips: How To Make a Great Impression",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare pellentesque sollicitudin. Suspendisse potenti. Fusce ex risus, iaculis sit amet...",
+          "imageUrl": "/images/blogs/image-6.webp",
+          "alt": "Land Your Dream Job",
+          "userDetails": {
+            "postedTime": "September 4, 2023",
+            "timeDuration": "2 mins to read"
+          },
+          "tags": [
+            {
+              "id": 0,
+              "name": "Job Tips"
+            },
+            {
+              "id": 1,
+              "name": "Events"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "heading": "21 Job Interview Tips: How To Make a Great Impression",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare pellentesque sollicitudin. Suspendisse potenti. Fusce ex risus, iaculis sit amet...",
+          "imageUrl": "/images/blogs/image-7.webp",
+          "alt": "Land Your Dream Job",
+          "userDetails": {
+            "postedTime": "September 4, 2023",
+            "timeDuration": "2 mins to read"
+          },
+          "tags": [
+            {
+              "id": 0,
+              "name": "Job Tips"
+            },
+            {
+              "id": 1,
+              "name": "Events"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
