@@ -1,0 +1,14 @@
+.highlight-text::after {
+    background-color: #3C65F5;
+    height: 25px;
+    position: relative;
+    width: 100%;
+    left: 0;
+    bottom: -6px;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+.landing-image{
+    width:40%;
+}

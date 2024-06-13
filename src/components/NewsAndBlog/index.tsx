@@ -6,6 +6,7 @@ import Image from "next/image";
 import newsAndBlogs from "./constants.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+import SectionDetails from "../common/SectionDetails";
 
 interface TagNames {
   id: number;
@@ -62,11 +63,12 @@ export default function NewsAndBlog() {
 
   return (
     <div className="flex flex-col ">
-      <div className="text-center text-3xl">News and Blog</div>
-      <p className="text-center text-xl">
-        Get the latest news, updates and tips
-      </p>
-      <div className="mt-14">
+      <SectionDetails
+        title="News and Blog"
+        description="Get the latest news, updates and tips"
+      />
+
+      <div>
         <Swiper
           slidesPerView={3}
           spaceBetween={30}
@@ -79,6 +81,9 @@ export default function NewsAndBlog() {
           modules={[Navigation, Pagination, Mousewheel, Keyboard]}
           className="swiper-blog"
           breakpoints={{
+            300: {
+              slidesPerView: 1,
+            },
             576: {
               slidesPerView: 1,
             },
@@ -144,7 +149,7 @@ export default function NewsAndBlog() {
           })}
         </Swiper>
       </div>
-      <div className="flex justify-center mt-14">
+      <div className="flex justify-center mt-8">
         <a
           className="bg-sky-900 text-white px-6 py-4 rounded"
           href="https://jthemes.com/themes/wp/jobbox/blog/"
