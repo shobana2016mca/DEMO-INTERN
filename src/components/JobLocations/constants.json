@@ -1,0 +1,57 @@
+{
+  "locations": [
+    {
+      "list": [
+        {
+          "id": 0,
+          "location": "Denmark",
+          "vacancies": "2 Vacancies",
+          "imageUrl": "/images/job-locations/denmark.svg",
+          "alt": "denmark",
+          "companies": "2 Companies"
+        },
+        {
+          "id": 1,
+          "location": "France",
+          "vacancies": "0 Vacancies",
+          "imageUrl": "/images/job-locations/france.svg",
+          "alt": "france",
+          "companies": "4 Companies"
+        },
+        {
+          "id": 2,
+          "location": "Germany",
+          "vacancies": "1 Vacancy",
+          "imageUrl": "/images/job-locations/germany.svg",
+          "alt": "germany",
+          "companies": "3 Companies"
+        },
+
+        {
+          "id": 3,
+          "location": "Holland",
+          "vacancies": "0 Vacancies",
+          "imageUrl": "/images/job-locations/holland.svg",
+          "alt": "holland",
+          "companies": "4 Companies"
+        },
+        {
+          "id": 4,
+          "location": "London",
+          "vacancies": "0 Vacancies",
+          "imageUrl": "/images/job-locations/london.svg",
+          "alt": "london",
+          "companies": "2 Companies"
+        },
+        {
+          "id": 5,
+          "location": "USA",
+          "vacancies": "0 Vacancies",
+          "imageUrl": "/images/job-locations/usa.svg",
+          "alt": "usa",
+          "companies": "4 Companies"
+        }
+      ]
+    }
+  ]
+}
