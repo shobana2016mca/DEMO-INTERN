@@ -44,7 +44,7 @@ var styles = {
   bmMenuWrap: {
     position: "fixed",
     height: "100%",
-    top: 0,
+    top: "0",
   },
   bmMenu: {
     background: "#ffffff",
@@ -63,7 +63,7 @@ var styles = {
   },
   bmOverlay: {
     background: "rgba(0, 0, 0, 0.3)",
-    top: 0,
+    top: "0",
   },
 };
 
@@ -124,10 +124,7 @@ export default function NavBar() {
           </div>
         </div>
         <div className="md:hidden">
-          {/* <Hamburger color="#000000" toggled={isOpen} toggle={setOpen} /> */}
-        </div>
-        <div className="md:hidden">
-          <Menu isOpen={isOpen} right width={"90%"}>
+          <Menu isOpen={isOpen} right styles={styles} width={"90%"}>
             <a id="home" className="menu-item">
               Home
             </a>
