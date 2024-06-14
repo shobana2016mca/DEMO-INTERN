@@ -27,7 +27,7 @@ export default function AllJobs() {
 
   const getJobDetails = () => {
     return (
-      <div className=" mt-6 grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
+      <div className="px-4 md:px-0 mt-6 grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4">
         {jobsList?.jobs?.map((job) => {
           return (
             <div
