@@ -74,7 +74,7 @@ export default function NewsAndBlog() {
           {newsAndBlogs?.newsAndBlogs?.map(({ list }: NewsAndBlogs1) => {
             return list?.map((item) => {
               return (
-                <SwiperSlide>
+                <SwiperSlide key={item.id}>
                   <div className="flex flex-col p-4 border border-slate-300	rounded-lg">
                     <Image
                       src={item.imageUrl}
@@ -86,7 +86,7 @@ export default function NewsAndBlog() {
                     <div className="flex pt-4 pb-5">
                       {item?.tags?.map((tag) => {
                         return (
-                          <span className="rounded-md font-bold py-1 px-2 text-xs bg-zinc-300 text-blue-700 mr-1">
+                          <span key={tag.id} className="rounded-md font-bold py-1 px-2 text-xs bg-zinc-300 text-blue-700 mr-1">
                             {tag.name}
                           </span>
                         );

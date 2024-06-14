@@ -84,7 +84,7 @@ export default function NavBar() {
             {headerOptions?.headerOptions?.map(
               ({ name, options }: Dropdown) => {
                 return (
-                  <ul className="flex">
+                  <ul key={1} className="flex">
                     <li className="group relative dropdown px-4 text-gray-500 hover:text-blue-700 cursor-pointer font-sm text-base tracking-wide">
                       <div className="flex items-baseline">
                         <a className="text-sm pr-1">{name}</a>
@@ -94,7 +94,7 @@ export default function NavBar() {
                         <ul className="rounded-xl top-0 -ml-4 w-48 bg-white shadow px-5 py-4">
                           {options?.map((item) => {
                             return (
-                              <li>
+                              <li key={item.id}>
                                 <a
                                   href="/"
                                   className="block text-gray-500 font-medium text-base  hover:text-blue-700 cursor-pointer"
@@ -127,7 +127,7 @@ export default function NavBar() {
           {/* <Hamburger color="#000000" toggled={isOpen} toggle={setOpen} /> */}
         </div>
         <div className="md:hidden">
-          <Menu isOpen={isOpen} styles={styles} right width={"90%"}>
+          <Menu isOpen={isOpen} right width={"90%"}>
             <a id="home" className="menu-item">
               Home
             </a>

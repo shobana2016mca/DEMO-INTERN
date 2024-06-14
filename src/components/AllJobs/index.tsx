@@ -31,6 +31,7 @@ export default function AllJobs() {
         {jobsList?.jobs?.map((job) => {
           return (
             <div
+              key={job.id}
               style={{ border: "1px solid #E0E6F7" }}
               className="rounded-lg p-5 bg-slate-50 hover:bg-white transition transform hover:-translate-y-1"
             >
@@ -57,6 +58,7 @@ export default function AllJobs() {
                 {job?.features?.map((item) => {
                   return (
                     <span
+                      key={item.id}
                       style={{ background: "#EFF3FC" }}
                       className="text-xs p-2 rounded-lg mr-2"
                     >
@@ -91,6 +93,7 @@ export default function AllJobs() {
             return list?.map((item) => {
               return (
                 <div
+                  key={item.id}
                   onClick={() => setActiveTab(item.id)}
                   className={` ${
                     item.id === activeTab

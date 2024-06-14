@@ -96,7 +96,10 @@ export default function Categories() {
             {categories?.categories?.map(({ list }: CategoriesList) => {
               return list?.map((item) => {
                 return (
-                  <div className="mr-2 w-11/12 md:mr-6 mb-6 card-details ">
+                  <div
+                    key={item.id}
+                    className="mr-2 w-11/12 md:mr-6 mb-6 card-details "
+                  >
                     <div className="w-full lg:w-52 flex category-image py-6 px-4 border rounded-lg border-slate-300 ">
                       <>
                         <Image

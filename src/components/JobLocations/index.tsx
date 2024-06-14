@@ -46,6 +46,7 @@ export default function JobLocations() {
           return list?.map((item) => {
             return (
               <div
+                key={item.id}
                 style={{ border: "1px solid #E0E6F7" }}
                 className={`rounded-lg p-3 hover:-translate-y-2 shadow-lg ${getColSpanValue(
                   item.id
