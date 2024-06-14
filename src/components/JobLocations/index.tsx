@@ -21,17 +21,17 @@ interface JobLocations {
 export default function JobLocations() {
   const getColSpanValue = (id: number) => {
     if (id === 0) {
-      return "lg:col-end-1  ";
+      return "lg:col-end-1 md:col-span-2";
     } else if (id === 1) {
-      return "lg:col-end-2";
+      return "lg:col-end-2 md:col-span-2";
     } else if (id === 2) {
-      return "lg:col-span-2 lg:col-end-4";
+      return "lg:col-span-2 lg:col-end-4 md:col-span-2";
     } else if (id === 3) {
-      return "col-span-2 col-end-2";
+      return "lg:col-span-2 lg:col-end-2 md:col-span-2";
     } else if (id === 4) {
-      return "col-span-1";
+      return "lg:col-span-1 md:col-span-2";
     } else if (id === 5) {
-      return "col-span-1";
+      return "lg:col-span-1 md:col-span-2";
     }
   };
 
@@ -41,7 +41,7 @@ export default function JobLocations() {
         title="Jobs by Location"
         description="Find your favourite jobs and get the benefits of yourself"
       />
-      <div className="job-locations flex grid grid-cols-6 gap-4 lg:grid-cols-3 md:gap-6 xl:gap-8 ">
+      <div className="px-4 md:px-0 lg:w-full job-locations flex grid grid-cols-1 gap-4 lg:grid-cols-3 md:gap-6 xl:gap-8 ">
         {jobLocations?.locations?.map(({ list }: JobLocations) => {
           return list?.map((item) => {
             return (

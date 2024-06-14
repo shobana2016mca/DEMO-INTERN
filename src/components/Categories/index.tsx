@@ -20,19 +20,21 @@ interface CategoriesList {
 export default function Categories() {
   const settings = {
     className: "",
-    // dots: true,
     centerMode: true,
     infinite: true,
     speed: 500,
     rows: 2,
     slidesPerRow: 1,
     nextArrow: (
-      <Image
-        src={"/images/next-arrow.svg"}
-        alt="next-arrow"
-        width={40}
-        height={43}
-      />
+      <div className="hidden md:visible">
+        <Image
+          src={"/images/next-arrow.svg"}
+          alt="next-arrow"
+          width={40}
+          height={43}
+          className="arrow"
+        />
+      </div>
     ),
     prevArrow: (
       <Image
@@ -40,6 +42,7 @@ export default function Categories() {
         alt="next-arrow"
         width={40}
         height={43}
+        className="arrow"
       />
     ),
     responsive: [
@@ -48,7 +51,6 @@ export default function Categories() {
         settings: {
           slidesToShow: 5,
           dots: true,
-
         },
       },
       {
@@ -76,6 +78,7 @@ export default function Categories() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: true,
         },
       },
     ],
@@ -88,13 +91,13 @@ export default function Categories() {
         description="Find the job that’s perfect for you. about 800+ new jobs everyday"
       />
       <div>
-        <div className="slider-container">
+        <div className="slider-container w-10/12 lg:w-full ">
           <Slider {...settings}>
             {categories?.categories?.map(({ list }: CategoriesList) => {
               return list?.map((item) => {
                 return (
-                  <div className="mr-2 md:mr-6 mb-6 card-details ">
-                    <div className="w-52 flex flx-col category-image py-6 px-4 border rounded-lg border-slate-300 ">
+                  <div className="mr-2 w-11/12 md:mr-6 mb-6 card-details ">
+                    <div className="w-full lg:w-52 flex category-image py-6 px-4 border rounded-lg border-slate-300 ">
                       <>
                         <Image
                           src={item.imageUrl}
