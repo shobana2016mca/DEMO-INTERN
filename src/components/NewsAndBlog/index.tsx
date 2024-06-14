@@ -33,53 +33,29 @@ interface NewsAndBlogs1 {
 }
 
 export default function NewsAndBlog() {
-  const settings = {
-    className: "center",
-    dots: true,
-    centerMode: true,
-    infinite: true,
-    centerPadding: "60px",
-    slidesToShow: 4,
-    speed: 500,
-    rows: 2,
-    slidesPerRow: 1,
-    nextArrow: (
-      <Image
-        src={"/images/next-arrow.svg"}
-        alt="next-arrow"
-        width={40}
-        height={43}
-      />
-    ),
-    prevArrow: (
-      <Image
-        src={"/images/previous-arrow.svg"}
-        alt="next-arrow"
-        width={40}
-        height={43}
-      />
-    ),
-  };
-
   return (
     <div className="flex flex-col ">
       <SectionDetails
         title="News and Blog"
-        description="Get the latest news, updates and tips"
+        description="Get the latest Fnews, updates and tips"
       />
 
-      <div>
+      <div className="swiper-controller px-2 md:px-0">
         <Swiper
           slidesPerView={3}
           spaceBetween={30}
           loop={true}
-          navigation={true}
+          // navigation={true}
           // mousewheel={true}
           keyboard={{
             enabled: true,
           }}
-          modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+          modules={[Navigation, Pagination]}
           className="swiper-blog"
+          navigation={{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          }}
           breakpoints={{
             300: {
               slidesPerView: 1,
@@ -148,6 +124,12 @@ export default function NewsAndBlog() {
             });
           })}
         </Swiper>
+        <div className="button-Arrangement">
+          <div className="button-swiper">
+            <div className="swiper-button-prev"></div>
+            <div className="swiper-button-next"></div>
+          </div>
+        </div>
       </div>
       <div className="flex justify-center mt-8">
         <a

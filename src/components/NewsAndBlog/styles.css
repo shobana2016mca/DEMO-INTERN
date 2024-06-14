@@ -9,7 +9,6 @@
   min-width: 350px;
 }
 
-
 .swiper-blog .swiper-button-next {
   /* background-color: white;
   background-color: rgba(255, 255, 255, 0.5);
@@ -22,7 +21,7 @@
   position: absolute;
   width: 20px;
   height: 20px;
-  background-image: url('/images/next-arrow.svg');
+  background-image: url("/images/next-arrow.svg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
@@ -31,15 +30,48 @@
   cursor: pointer;
 }
 
-.swiper-blog .swiper-button-prev {
-  /* background-color: white;
-  background-color: rgba(255, 255, 255, 0.5);
-  right: 10px;
-  padding: 30px;
-  /* position: relative; */
-  /* color: #000 !important;
-  fill: black !important;
-  stroke: black !important; */
+.button-swiper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: white;
+  /* padding: 20px; */
+  /* width: 100px; */
+}
+
+.swiper-controller {
+  width: 100%;
+  /* padding: 70px 30px; */
+  position: relative;
+}
+
+.button-Arrangement {
+  position: absolute;
+  left: 90px;
+  right: 0px;
+  top: -30px;
+}
+
+.button-swiper .swiper-button-next {
+  background: url("/images/next-arrow.svg");
+  background-repeat: no-repeat;
+}
+
+.button-swiper .swiper-button-prev {
+  background: url("/images/previous-arrow.svg");
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  visibility: hidden;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: unset !important;
+  width: 40px !important;
 }
 
 .avartar-image {
